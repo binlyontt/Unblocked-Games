@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website Shortcuts</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff2b8e, #abb6f4, #f413ec, #8863f9); 
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/clouds.png');
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: -1;
+            animation: cloudMove 30s linear infinite;
+        }
+
+        @keyframes cloudMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px; 
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .friend-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+            gap: 30px; 
+            justify-items: center;
+            margin-top: 40px;
+        }
+
+        .friend-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            padding: 10px; 
+            width: 100%;
+            max-width: 260px; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            opacity: 0; 
+            animation: fadeIn 0.8s forwards; 
+        }
+
+        .friend-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #fb76ee; 
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+        .friend-body p {
+            font-size: 0.9em; 
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #ffffff; 
+        }
+
+        .friend-body a {
+            color: rgb(4, 4, 4);
+            text-decoration: none;
+            font-size: 0.9em; 
+            background-color: #cd61fb;
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .friend-body a:hover {
+            background-color: #f453df;
+            transform: translateY(-3px);
+        }
+
+        .friend-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.3em;
+            }
+
+            .friend-body p {
+                font-size: 0.9em;
+            }
+
+            .friend-body a {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .friend-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clouds"></div>
+    <div class="container">
+        <h1>Game Websites</h1>
+        <h2>all working websites</h2>
+        <h4>Made by Binly</h4>
+        <h3>ZOOM OUT TO SEE EVERYTHING</h3>
+        <h4>^^^^^^^^^^^^^^^^^^^^^^^^^^^</h4>
+        <div class="friend-cards">
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Only Up</h2>
+                </div>
+                <div class="friend-body">
+                    <p>This is a offbrand</p>
+                    <a href="https://subscribetotryhxrdbacon-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/Meteor@7e77300e074d9eb77fa119d640baa1fe1a318bfb/examples/react-in-blaze/lib/oup.xml&container=ig">ONLY UP WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Blade Ball</h2>
+                </div>
+                <div class="friend-body">
+                    <p>This is a offbrand</p>
+                    <a href="https://paramount-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fblb.xml&container=ig">BLADE BALL WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Google Snake</h2>
+                </div>
+                <div class="friend-body">
+                    <p>This is google snake!</p>
+                    <a href="https://g.co/kgs/n5iSaEX">GOOGLE SNAKE WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Rytlock</h2>
+                </div>
+                <div class="friend-body">
+                    <p>I have 0 idea what to do on this website</p>
+                   <a href="https://d3b4yo2b5lbfy.cloudfront.net/rampage/index.html">RYTLOCK WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Wizard Of War</h2>
+                </div>
+                <div class="friend-body">
+                    <p>This game is a 2player game so if you want to play with your friends go ahead and play this.</p>
+                   <a href="https://wizardofwor.krissz.hu/">WIZARD OF WAR WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Odd One Out</h2>
+                </div>
+                <div class="friend-body">
+                    <p>This is pretty fun the name is basically it</p>
+                   <a href="https://artsandculture.google.com/experiment/wAHNn4JsVTFOiw">ODD ONE OUT WEBSITE</a>
+                </div>
+            </div>
+
+            
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Wall Rider</h2>
+                </div>
+                <div class="friend-body">
+                    <p>Pro Tip : IF YOU WANT TO BOUNCE JUST LEFT CLICK OR I THINK TAP YOUR SCREEN FOR MOBILE.</p>
+                   <a href="https://d1sjxq8pnwjv9j.cloudfront.net/">WALL RIDER WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Unclaimed</h2>
+                </div>
+                <div class="friend-body">
+                    <p></p>
+                   <a href="">NO WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Unclaimed</h2>
+                </div>
+                <div class="friend-body">
+                    <p></p>
+                   <a href="">NO WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Unclaimed</h2>
+                </div>
+                <div class="friend-body">
+                    <p></p>
+                   <a href="">NO WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Unclaimed</h2>
+                </div>
+                <div class="friend-body">
+                    <p></p>
+                   <a href="">NO WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="friend-header">
+                    <h2>Suggestions</h2>
+                </div>
+                <div class="friend-body">
+                    <p>If you have any unblocked game or social suggestions join my server now to give me then</p>
+                    <a href="https://discord.gg/binly">DISCORD SERVER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // credits to geeks4geeks website mfs helped me out so hard with this stupid ass js
+        window.onload = () => {
+            const friendCards = document.querySelectorAll('.friend-card');
+            friendCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animation = 'fadeIn 0.8s forwards'; 
+                }, index * 200); 
+            });
+        };
+    </script>
+</body>
+</html>
